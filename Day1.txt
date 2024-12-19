@@ -1,0 +1,115 @@
+Day 1
+1.
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int a=10;
+        int b=10;
+        int c= a+b;
+        Console.WriteLine ("Answer is "+c);
+    }
+}
+
+2.public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int a=10;
+        int b=10;
+        int c= a-b;
+        Console.WriteLine ("Answer is "+c);
+    }
+}
+
+3.using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int a=11;
+        int b=2;
+        int c= a%b;
+        Console.WriteLine ("Answer is "+c);
+    }
+}
+
+4. public static void Main(string[] args)
+    {
+        
+        int result=0;
+       for(int i=1;i<=10;i++)
+       {
+           result+=i;
+           Console.WriteLine("Answer is {0}", result);
+       }
+
+       
+    }
+
+or
+
+ public static void Main(string[] args)
+    {
+        
+        int result=0;
+       for(int i=1;i<=10;i++)
+       {
+           result+=i;
+           if(i==10)
+           {
+           Console.WriteLine("Answer is {0}", result);
+           }
+       }
+
+       
+    }
+
+
+
+5. public static void Main(string[] args)
+    {
+           Console.WriteLine("Enter a number to find squre root");
+           int number = Convert.ToInt32(Console.ReadLine());
+           int result=number*number;
+            Console.WriteLine("Number is:{0}",result);
+     }
+
+6. public static void Main(string[] args)
+    {
+           Console.WriteLine("Enter a number to find squre root");
+           int number = Convert.ToInt32(Console.ReadLine());
+           int result=number*number*number;
+            Console.WriteLine("Number is:{0}",result);
+     }
+
+
+{
+        Console.WriteLine("Enter numbers to get average, separated by spaces:");
+
+       
+        string input = Console.ReadLine();
+        string[] numberStrings = input.Split(' ');
+
+        // Convert each string in the array to an integer
+        int[] numbers = Array.ConvertAll(numberStrings, int.Parse);
+
+        // Calculate the average
+        float average = (float)numbers.Sum() / numbers.Length;
+
+        Console.WriteLine("The average is: " + average);
+    }
+}
+
+
+public static void Main(string[] args)
+    {
+        int a=10;
+        int b=20;
+        b=b-a;
+        a=b+a;
+        Console.WriteLine("swap value for a={0} and b={1}",a,b);
+    
+    }
+
