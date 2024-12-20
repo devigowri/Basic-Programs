@@ -1,0 +1,90 @@
+Write a program to check if a number is positive, negative, or zero.
+ public static void Main(string[] args)
+    {
+          Console.WriteLine("Enter a number to check ");
+          int number = Convert.ToInt32(Console.ReadLine());
+          if(number==0)
+          {
+             Console.WriteLine("The Given number is 0"); 
+          }
+          else if(number<0)
+          {
+              Console.WriteLine("The Given number is Negative value"); 
+          }
+        else if(number > 0)
+        {
+            Console.WriteLine("The Given number is positive value"); 
+        }
+    }
+
+Write a program to check if a number is even or odd.
+
+ public static void Main(string[] args)
+    {
+          Console.WriteLine("Enter a number to check ");
+          int number = Convert.ToInt32(Console.ReadLine());
+          if(number%2==0)
+          {
+             Console.WriteLine("This is even number"); 
+          }
+          else if(number%2==1)
+          {
+              Console.WriteLine("This is odd number"); 
+          }
+        
+    }
+
+Write a program to check if a year is a leap year.
+public static void Main(string[] args)
+    {
+          Console.WriteLine("Enter year to check ");
+          int year = int.Parse(Console.ReadLine());
+          
+          if(year%4==1)
+          {
+               Console.WriteLine("This is not leap year ");
+          }
+          else
+          {
+               Console.WriteLine("Not a leap year ");
+          }
+          
+    }
+Write a program to print numbers from 1 to 50 using a loop.
+
+ public static void Main(string[] args)
+    {
+         for(int i=1;i<=100;i++)
+         {
+             Console.WriteLine(i);
+         }
+          
+        
+          
+    }
+
+Write a program to print the first 10 even numbers.
+public static void Main()
+    {
+        for (int i = 1; i <= 10; i++)
+        {
+            if (i % 2 == 0)
+            {
+                Console.WriteLine(i);
+            }
+        }
+    }
+
+ODD Number
+ public static void Main()
+    {
+        for (int i = 1; i <= 10; i++)
+        {
+            if (i % 2 == 1)
+            {
+                Console.WriteLine(i);
+            }
+        }
+    }
+
+	
