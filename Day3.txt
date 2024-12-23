@@ -1,0 +1,90 @@
+Write a program to find the largest element in an array.
+
+public static void Main(string[] args)
+    int[] numbers = { 5, 2, 9, 1, 7 };
+int max = numbers[0];
+
+foreach (int number in numbers)
+{
+    if (number > max)
+    {
+        max = number;
+    }
+}
+Console.WriteLine("The largest number is: " + max);
+
+
+Write a program to input and display elements of an array
+
+  public static void Main(string[] args)
+    {
+   int[] numbres = {1,5,6,9};
+    for (int i = 0; i < numbres.Length; i++)  
+        {  
+              Console.WriteLine(numbres[i]);  
+        }  
+}
+
+Write a program to find the min numin an array
+
+  public static void Main(string[] args)
+    {
+          int[]array1 = {0,2,5,6};
+          int min=array1[0];
+          foreach(var item in array1)
+          {
+              if(item < min)
+              {
+                  min = item;
+              }
+          }
+          Console.WriteLine("The largest number is: " + min);
+}
+
+Write a program to find the average of an array.
+ public static void Main(string[] args)
+    {
+        int[]array1={5,6,8,9};
+        int result=0;
+        int average=0;
+        foreach(var i in array1)
+        {
+          result+=i  ;
+        
+         
+        }
+        average = result / array1.Length; 
+         Console.WriteLine("average is:" + average);
+    }
+
+
+public static void Main(string[] args)
+    {
+       string[] array1={"car","volvo","benz","BMW"};
+       Array.Sort(array1);
+       foreach(var i in array1)
+       {
+           Console.WriteLine(i);
+       }
+    }
+
+
+ Console.WriteLine("Enter a value");
+      string userinput=(Console.ReadLine());
+      int div = userinput.length/2;
+      int start =0;
+      int end =userinput.length;
+      
+      for(int i=0;i<div;i++)
+      {
+          if(start==end)
+          {
+              Console.WriteLine("palidrome");
+              start++;
+              end--;
+          }
+          else
+          {
+              Console.WriteLine("not a palidrome");
+          }
+      }
