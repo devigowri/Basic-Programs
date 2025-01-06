@@ -1,0 +1,55 @@
+using System;
+
+public class HelloWorld
+{
+    private int a; // Declare 'a' as a class field
+
+    public HelloWorld()
+    {
+        a = 42; // Initialize 'a'
+        Console.WriteLine(a); // Print 'a'
+    }
+
+    public static void Main(string[] args)
+    {
+        HelloWorld obj = new HelloWorld(); // Correct object creation
+        Console.WriteLine(obj.a); // Access the field 'a'
+    }
+}
+
+
+COPY CONSTRUCTOR
+
+2.
+
+using System;
+
+public class Language
+{
+    string Lang = "c#";
+    double Version = 5.0;
+
+    public Language()
+    {
+        Lang = "c#";
+        Version = 5.0;
+    }
+
+    public Language(string lang, double version)
+    {
+        Lang = lang;
+        Version = version;
+    }
+
+    public Language(Language obj)
+    {
+        Lang = obj.Lang;
+        Version = obj.Version;
+    }
+
+    public static void Main(string[] args)
+    {
+        Language obj1 = new Language();
+        Console.WriteLine($"Language: {obj1.Lang}, Version: {obj1.Version}");
+    }
+}
